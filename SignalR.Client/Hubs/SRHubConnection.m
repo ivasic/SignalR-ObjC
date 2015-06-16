@@ -78,8 +78,8 @@
     
     SRLogConnectionDebug(@"will create proxy %@",hubName);
 
-    SRHubProxy *hubProxy;
-    if(_hubs[[hubName lowercaseString]] == nil) {
+	SRHubProxy *hubProxy = _hubs[[hubName lowercaseString]];
+    if(hubProxy == nil) {
         hubProxy = [[SRHubProxy alloc] initWithConnection:self hubName:[hubName lowercaseString]];
         _hubs[[hubName lowercaseString]] = hubProxy;
     }
