@@ -38,7 +38,7 @@
  * @param selector A selector identifying the message to send.
  * @return An instance of an `SRSubscription` object
  */
-- (SRSubscription *)on:(NSString *)eventName perform:(NSObject *)object selector:(SEL)selector;
+- (SRSubscription *__nonnull)on:(NSString *__nonnull)eventName perform:(NSObject *__nonnull)object selector:(SEL __nonnull)selector;
 
 
 ///-------------------------------
@@ -52,7 +52,7 @@
  * @param method the `NSString` object representing the name of the server method to invoke
  * @param args the arguments to pass as part of the invocation
  */
-- (void)invoke:(NSString *)method withArgs:(NSArray *)args;
+- (void)invoke:(NSString *__nonnull)method withArgs:(NSArray *__nonnull)args;
 
 /**
  * Invokes a SignalR Server Hub method with the specified method name and arguments
@@ -61,6 +61,6 @@
  * @param args the arguments to pass as part of the invocation
  * @param block the block to be called once the server method is invoked, this may be nil
  */
-- (void)invoke:(NSString *)method withArgs:(NSArray *)args completionHandler:(void (^)(id response, NSError *error))block;
+- (void)invoke:(NSString *__nonnull)method withArgs:(NSArray *__nonnull)args completionHandler:(void (^ __nullable)(id __nullable response, NSError *__nullable error))block;
 
 @end
