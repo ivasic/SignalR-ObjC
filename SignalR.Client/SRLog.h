@@ -40,9 +40,9 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 
 #define SRLogError(frmt, ...)      do{ NSLog((frmt), ##__VA_ARGS__); } while(0)
 #define SRLogWarn(frmt, ...)       do{ NSLog((frmt), ##__VA_ARGS__); } while(0)
-#define SRLogInfo(frmt, ...)       do{ NSLog((frmt), ##__VA_ARGS__); } while(0)
-#define SRLogDebug(frmt, ...)      do{ NSLog((frmt), ##__VA_ARGS__); } while(0)
-#define SRLogVerbose(frmt, ...)    do{ NSLog((frmt), ##__VA_ARGS__); } while(0)
+#define SRLogInfo(frmt, ...)       
+#define SRLogDebug(frmt, ...)
+#define SRLogVerbose(frmt, ...)
 
 #endif
 
